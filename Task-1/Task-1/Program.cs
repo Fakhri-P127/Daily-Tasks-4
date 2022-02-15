@@ -6,27 +6,25 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            string[] arr = { "Hello how are yOu I'm from P127. Siz tekmiLlesdIrilmesleRdensiniZmi" };
+            string[] exampleArr = { "Hello how are yOu I'm FRom P127. Siz tekmiLlesHdIrilmeshleRdensiniZmi. Yox biZ iNTeRnoSionaLLashdirilmishLaRDaniq" };
             
-            Change(ref arr);
-                        
+            Change(exampleArr);
         }
-        public static void Change(ref string[] arr)
+        public static void Change(string[] arr)
         {
-            
-            foreach (string text in arr)
+            foreach (string str in arr)
             {
-                foreach (char letter in text)
+                foreach (char letter in str)
                 {
                     if (char.IsLower(letter))
                     {
-                        Console.Write(char.ToUpper(letter));                        
+                        Console.Write(char.ToUpper(letter));
                     }
                     else
                     {
-                        Console.Write(char.ToLower(letter));                        
+                        Console.Write(char.ToLower(letter));
                     }
-                }                                   
+                }
             }
         }
     }
