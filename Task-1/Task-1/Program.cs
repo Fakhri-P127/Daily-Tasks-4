@@ -8,9 +8,9 @@ namespace Task_1
         {
             string[] exampleArr = { "Hello how are yOu I'm FRom P127. Siz tekmiLlesHdIrilmeshleRdensiniZmi. Yox biZ iNTeRnoSionaLLashdirilmishLaRDaniq" };
             
-            Change(exampleArr);
+            ChangeCase(exampleArr);
         }
-        public static void Change(string[] arr)
+        public static void ChangeCase(string[] arr)
         {
             foreach (string str in arr)
             {
